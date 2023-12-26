@@ -1,0 +1,17 @@
+meta {
+  name: Consultar Unidades de atendimento
+  type: http
+  seq: 4
+}
+
+get {
+  url: https://sistema.gertel.com.br/api/v2/atendimento_unidades
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: Basic Y2ljbG9zX3ZlbmRhc29ubGluZToxMjM0NQ==
+  Content-Type: application/json
+  Accept: application/json
+}

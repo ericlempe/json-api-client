@@ -1,0 +1,21 @@
+meta {
+  name: Cons- Linhas por CPF_CNPJ
+  type: http
+  seq: 8
+}
+
+get {
+  url: https://sistema.gertel.com.br/api/v2/linhas?cpf_cnpj=03632872000160
+  body: none
+  auth: none
+}
+
+query {
+  cpf_cnpj: 03632872000160
+}
+
+headers {
+  Authorization: Basic Y2ljbG9zX3ZlbmRhc29ubGluZToxMjM0NQ==
+  Content-Type: application/json
+  Accept: application/json
+}

@@ -1,0 +1,22 @@
+meta {
+  name: Cons Linhas  por Periodo
+  type: http
+  seq: 9
+}
+
+get {
+  url: https://sistema.gertel.com.br/api/v2/linhas/contratadas?data_inicial=2023-11-06&data_final=2023-11-07
+  body: none
+  auth: none
+}
+
+query {
+  data_inicial: 2023-11-06
+  data_final: 2023-11-07
+}
+
+headers {
+  Authorization: Basic Y2ljbG9zX3ZlbmRhc29ubGluZToxMjM0NQ==
+  Content-Type: application/json
+  Accept: application/json
+}

@@ -1,0 +1,24 @@
+meta {
+  name: Solicitar envio de faturas
+  type: http
+  seq: 3
+}
+
+get {
+  url: https://api.gertel.com.br/sar/fatura?periodo=102023
+  body: none
+  auth: bearer
+}
+
+query {
+  periodo: 102023
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}
+
+auth:bearer {
+  token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJBUEkgR2VydGVsIiwiaXNzIjoiQVBJIEdlcnRlbCIsImV4cCI6MTcwMDUwMTU1NCwiaWF0IjoxNzAwNDk3OTU0LCJhdWQiOiJJbnRlZ3JhXHUwMGU3XHUwMGUzbyBBUEkgR2VydGVsIiwianRpIjoidEg0YWN5SW00azU3dFh6VG4yeTF5In0.QbAtf29DnY8kiVRDX4tJ6TABPTHKrnoPyMFFLofNSEY
+}
