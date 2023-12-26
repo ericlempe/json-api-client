@@ -1,0 +1,24 @@
+meta {
+  name: Buscar CEP
+  type: http
+  seq: 2
+}
+
+get {
+  url: https://api.sicoobes.com.br/pa/cep/29105100
+  body: multipartForm
+  auth: bearer
+}
+
+auth:bearer {
+  token: ZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SkpaRlZ6ZFdGeWFXOUJjR2tpT2lJeElpd2laWGh3SWpveE5qZzRNVE13TkRNNGZRLnZIS1RwcnRJRmpteDZMWWQ4V0NnOVd0Qjd5SXdHTFkxMk1GbEFWeXZKbG8
+}
+
+body:form-urlencoded {
+  Numero: 5527992373693
+  Template: 014babaf-65de-4986-9580-907f43184609
+  Body['nome_cliente']: Teste
+  Body['nome_funcionario']: Gabrielle%20Do%20Nascimento%20Miranda
+  Body['nome_oferta']: Cr%C3%A9dito%20Estudantil%20Fa%C3%A7a%20Acontecer
+  ~IdUbots: 
+}

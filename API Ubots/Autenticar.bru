@@ -1,0 +1,16 @@
+meta {
+  name: Autenticar
+  type: http
+  seq: 3
+}
+
+post {
+  url: https://api.sicoobes.com.br/autenticar
+  body: multipartForm
+  auth: none
+}
+
+body:form-urlencoded {
+  login: mindtec
+  senha: Psw%401706
+}
