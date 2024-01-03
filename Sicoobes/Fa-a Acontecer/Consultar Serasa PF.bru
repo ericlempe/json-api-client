@@ -1,0 +1,23 @@
+meta {
+  name: Consultar Serasa PF
+  type: http
+  seq: 5
+}
+
+get {
+  url: http://localhost:8110/api/consultar-pessoa-fisica?Cpf=15724586746
+  body: none
+  auth: bearer
+}
+
+query {
+  Cpf: 15724586746
+  ~Cpf: 39974047803
+  ~Cpf: 65282018110
+  ~Cpf: 20951921339
+  ~Cpf: 04546590911
+}
+
+auth:bearer {
+  token: ZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SkpaRlZ6ZFdGeWFXOUJjR2tpT2lJeElpd2laWGh3SWpveE5qa3lNamswT0RRM2ZRLllhZlBYTk0yRTFmaGlQdENRT1VSd1kwVzRXU3FQSERVdEc2eDFHUnFuaUU
+}

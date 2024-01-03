@@ -1,0 +1,27 @@
+meta {
+  name: Solicitar Beneficio
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{BASE_URL}}/beneficio/associado
+  body: multipartForm
+  auth: bearer
+}
+
+auth:bearer {
+  token: ZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SmtZV1J2Y3lJNmV5SkpaRlZ6ZFdGeWFXOGlPaUkxTUNJc0lrNXZiV1ZWYzNWaGNtbHZJam9pUlhKcFl5Qk1aVzF3WlNJc0lrNTFiVU53WmtOdWNHb2lPaUl4TkRRMk1UVTFNVGN3T1NBZ0lDSXNJa2xrUTI5dmNHVnlZWFJwZG1FaU9pSTBJaXdpVG5WdFEyOXZjR1Z5WVhScGRtRWlPaUl6TURBeElpd2lTV1JVYVhCdlVHVnlabWxzSWpvaU1UZzFJaXdpU1dSUVlTSTZXeUkyTXlJc0lqWTRJbDE5TENKbGVIQWlPakUyT1RBME5qTXpORFY5LmZWSm83dVpVd2txYlhGandYb01qT1FIWERRZUZ6NURvQ01xY1ZtdE1lb2s
+}
+
+body:form-urlencoded {
+  IdCooperativa: 9
+  IdPa: 63
+  NumCpfCnpj: 22261931034
+  DescAssociado: Rog%C3%A9rio%20Dornelas%20Filho
+  NumContaCorrente: 51515111
+  IdPacoteTarifa: 3
+  IdBeneficio: 8
+  IdTipoAssinaturaTermo: 1
+  ~Celular: 27988816774
+}

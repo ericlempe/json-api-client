@@ -1,0 +1,20 @@
+meta {
+  name: Registrar Historico portabilidade
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:8091/api/v1/beneficiario/372/historico-portabilidade
+  body: multipartForm
+  auth: bearer
+}
+
+auth:bearer {
+  token: ZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SkpaRlZ6ZFdGeWFXOUJjR2tpT2lJeElpd2laWGh3SWpveE5qazROelkyTURJNWZRLmQwRVQxbVoybHFKT0tMaElwSW9MWWJzNkdGTEpFdUJRdTVJdWhPaHYyeFE
+}
+
+body:form-urlencoded {
+  IdTipoHistoricoBeneficiario: 1
+  DescHistorico: Cadastro%20portabilidade
+}

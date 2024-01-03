@@ -1,0 +1,19 @@
+meta {
+  name: Upload Arquivo
+  type: http
+  seq: 2
+}
+
+post {
+  url: https://facaacontecer.sicoobes.com.br/api/v1/arquivo/upload
+  body: multipartForm
+  auth: bearer
+}
+
+auth:bearer {
+  token: ZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SkpaRlZ6ZFdGeWFXOUJjR2tpT2lJeElpd2laWGh3SWpveE5qazVOVFV6TmpJMmZRLkFERk1RZ2pqME16dXJQODhiWlNuV1ljWF9aOTBYU1p0b3RZZjBoc2YzbEk
+}
+
+body:form-urlencoded {
+  arquivo: undefined
+}

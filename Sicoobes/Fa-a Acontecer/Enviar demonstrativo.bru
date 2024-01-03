@@ -1,0 +1,26 @@
+meta {
+  name: Enviar demonstrativo
+  type: http
+  seq: 4
+}
+
+post {
+  url: https://facaacontecer.sicoobes.com.br/api/v1/proposta/enviar-demonstrativo
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: ZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SkpaRlZ6ZFdGeWFXOUJjR2tpT2lJeElpd2laWGh3SWpveE5qazVOVFV6TmpJMmZRLkFERk1RZ2pqME16dXJQODhiWlNuV1ljWF9aOTBYU1p0b3RZZjBoc2YzbEk
+}
+
+body:json {
+  {
+      "IdProposta": 36825,
+      "Hash": "4ca19c001267ff73d147f82fdfa99134.pdf",
+      "Caminho": "\\anexos\\2023\\Nov",
+      "DescNome": "PLANO DE PAGAMENTO - LUANA PESSOTTI.pdf",
+      "DataPagamento": "09/11/2023",
+      "DataVencimentoUltimaParcela": "05/02/2027"
+  }
+}

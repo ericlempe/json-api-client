@@ -1,0 +1,23 @@
+meta {
+  name: Cadastrar Historico
+  type: http
+  seq: 2
+}
+
+post {
+  url: localhost:8110/api/v1/proposta/historico-robo/1532
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: ZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SkpaRlZ6ZFdGeWFXOUJjR2tpT2lJeElpd2laWGh3SWpveE5qazRNalkzTmpRMWZRLkdsRDdhc1lJMHBORElxRS1oaDBSRmNFbDdzaWRaOE5IekdDSlBFY0YwM2M
+}
+
+body:json {
+  {
+      "IdTipoStatusProposta": 1,
+      "IdTipoEventoHistorico": 64,
+      "DescHistorico": "Lorem ipsu"
+  }
+}

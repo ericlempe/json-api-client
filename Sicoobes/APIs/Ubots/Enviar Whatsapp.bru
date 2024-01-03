@@ -1,0 +1,48 @@
+meta {
+  name: Enviar Whatsapp
+  type: http
+  seq: 3
+}
+
+post {
+  url: https://gateway.ubots.app/api/v1/messages
+  body: json
+  auth: bearer
+}
+
+headers {
+  x-ubots-user-token: 
+  x-ubots-account: 
+}
+
+auth:bearer {
+  token: 1oCZZ6EoYwSE5mSp01jm7Qupf84uQrY4
+}
+
+body:json {
+  {
+      "sender": {
+          "channel": "WHATSAPP",
+          "isBot": true,
+          "name": "SicoobES",
+          "id": "558008785127"
+      },
+      "receiver": {
+          "channel": "WHATSAPP",
+          "id":  "27992373693"
+      },
+      "messages": [
+          {
+              "type": "TEMPLATE",
+              "payload": {
+                  "id": "014babaf-65de-4986-9580-907f43184609",
+                  "parameters": {
+                     "nome_cliente": "Teste Mindtec",
+                      "nome_funcionario": "Gabrielle Do Nascimento Miranda",
+                      "nome_oferta": "Crédito Estudantil Faça Acontecer"
+                  }
+              }
+          }
+      ]
+  }
+}

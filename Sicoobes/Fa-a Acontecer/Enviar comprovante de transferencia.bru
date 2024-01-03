@@ -1,0 +1,32 @@
+meta {
+  name: Enviar comprovante de transferencia
+  type: http
+  seq: 3
+}
+
+post {
+  url: localhost:8110/api/v1/instituicao/enviar-comprovante-transferencia
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: ZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SkpaRlZ6ZFdGeWFXOUJjR2tpT2lJeElpd2laWGh3SWpveE5qZzNNVGcyTURZemZRLkdhWGhCREdZc09vbWZtVUs5QXJpTU5INWd3ZHV6RGVIWnpfQ3BXc2ZERXM
+}
+
+body:json {
+  {
+      "IdInstituicao": "2",
+      "IdProposta": [
+         "1452",
+          "1453",
+          "1472",
+          "1478",
+          "1479",
+          "1483"
+      ],
+      "Hash": "03c530989280979bb4ba33ebcbc0461e.png",
+      "Caminho": "/anexos/2023/Jun",
+      "DescNome": "MicrosoftTeams-image (4).png"
+  }
+}

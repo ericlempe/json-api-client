@@ -1,0 +1,19 @@
+meta {
+  name: Update Post
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{base_url}}/posts/1
+  body: json
+  auth: bearer
+}
+
+body:json {
+  {
+    "userId": 1,
+    "title": "Teste de cadastro 2",
+    "body": "Corpo de mensagem 2"
+  }
+}

@@ -1,0 +1,31 @@
+meta {
+  name: Checar se pode cancelar
+  type: http
+  seq: 2
+}
+
+get {
+  url: https://api.zurich.com.br/affinities/retailer/v1/certificates/99108202304180000001/cancellable?package=400023&cancellationDate=13/04/2023&transaction=X
+  body: json
+  auth: none
+}
+
+query {
+  package: 400023
+  cancellationDate: 13/04/2023
+  transaction: X
+}
+
+headers {
+  Content-Type: application/json
+  Authorization: Basic YjNiMDc5OTUtMDc2OS00MTkzLTkzMDMtZDlkMjNjOTc1N2RiOmI1MDM1YjhlLTgxZGEtNDg0Ny05ZjkzLWEwYjQ4ZjYxYTQ1MQ==
+  person-token: Lb7IGfy09IpQYC69xddcI+HcC33Tqg1k7C1bhYxt9NM=
+  client_id: b3b07995-0769-4193-9303-d9d23c9757db
+  access_token: ae442faa-1eb1-4347-bb85-24778a7e5db1
+}
+
+body:json {
+    {
+      "grant_type": "client_credentials"
+    }
+}

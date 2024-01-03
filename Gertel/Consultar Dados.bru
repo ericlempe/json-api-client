@@ -5,18 +5,21 @@ meta {
 }
 
 get {
-  url: https://sistema.gertel.com.br/api/v2/consumo?linha=65993467331
+  url: https://sistema.gertel.com.br/api/v2/consumo?linha=27995300979
   body: none
   auth: none
 }
 
 query {
-  linha: 65993467331
-  ~linha: 27995300979
+  linha: 27995300979
 }
 
 headers {
-  Authorization: Basic Y2ljbG9zX3ZlbmRhc29ubGluZToxMjM0NQ==
   Content-Type: application/json
   Accept: application/json
+  Authorization: Basic Y2ljbG9zX3ZlbmRhc29ubGluZToxMjM0NQ==
+}
+
+auth:bearer {
+  token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJBUEkgR2VydGVsIiwiaXNzIjoiQVBJIEdlcnRlbCIsImV4cCI6MTcwNDI1MTE1NywiaWF0IjoxNzA0MjQ3NTU3LCJhdWQiOiJJbnRlZ3JhXHUwMGU3XHUwMGUzbyBBUEkgR2VydGVsIiwianRpIjoiNlVGMnJnVUpxdnluR3hNcjU2Rk94MiJ9.0cyjNxeV8mtDt30PQC_9DyL9HOUCQWjTkzo9oIVutGk
 }

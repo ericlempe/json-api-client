@@ -1,0 +1,37 @@
+meta {
+  name: Webhook Autentique
+  type: http
+  seq: 9
+}
+
+post {
+  url: http://localhost:8039/api/v1/webhook/2
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: ZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SmtZV1J2Y3lJNmV5SkpaRlZ6ZFdGeWFXOGlPaUkxTUNJc0lrNXZiV1ZWYzNWaGNtbHZJam9pUlhKcFl5Qk1aVzF3WlNJc0lrNTFiVU53WmtOdWNHb2lPaUl4TkRRMk1UVTFNVGN3T1NBZ0lDSXNJa2xrUTI5dmNHVnlZWFJwZG1FaU9pSTBJaXdpVG5WdFEyOXZjR1Z5WVhScGRtRWlPaUl6TURBeElpd2lTV1JVYVhCdlVHVnlabWxzSWpvaU1UYzRJaXdpU1dSUVlTSTZXeUkyTXlJc0lqWTBJbDE5TENKbGVIQWlPakUzTURFNU9EVTBPRGw5Lk9EbHFSMlExYjJfQTg3R1A4NlEtV2ZQZ0VDaWFFTDNGdWhlRFJfRllCUFk
+}
+
+body:json {
+  {
+    "partes": [
+      {
+        "nome": "Eric Lempe",
+        "email": "ericlempe1994@gmail.com",
+        "cpf": "14461551709",
+        "assinado": true
+      },
+       {
+        "nome": "Eric 2",
+        "email": "dev.ericlp@gmail.com",
+        "cpf": "65658078768",
+         "assinado": true
+      }
+    ],
+    "documento": {
+      "uuid": "7d7abc5364e211971c721a17bfd85d2e76cb143f8b92fa97a"
+    }
+  }
+}

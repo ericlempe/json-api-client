@@ -1,0 +1,24 @@
+meta {
+  name: Cadastrar
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{BASE_URL}}/categoria
+  body: multipartForm
+  auth: bearer
+}
+
+headers {
+  Accept: application/json
+}
+
+auth:bearer {
+  token: ZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SmtZV1J2Y3lJNmV5SkpaRlZ6ZFdGeWFXOGlPaUkxTUNJc0lrNXZiV1ZWYzNWaGNtbHZJam9pUlhKcFl5Qk1aVzF3WlNJc0lrNTFiVU53WmtOdWNHb2lPaUl4TkRRMk1UVTFNVGN3T1NBZ0lDSXNJa2xrUTI5dmNHVnlZWFJwZG1FaU9pSTBJaXdpVG5WdFEyOXZjR1Z5WVhScGRtRWlPaUl6TURBeElpd2lTV1JVYVhCdlVHVnlabWxzSWpvaU1UYzRJaXdpU1dSUVlTSTZXeUkyTXlJc0lqWTBJbDE5TENKbGVIQWlPakUzTURFNU9EVTBPRGw5Lk9EbHFSMlExYjJfQTg3R1A4NlEtV2ZQZ0VDaWFFTDNGdWhlRFJfRllCUFk
+}
+
+body:form-urlencoded {
+  DescCategoria: Categoria%203
+  BolAtivo: 2
+}

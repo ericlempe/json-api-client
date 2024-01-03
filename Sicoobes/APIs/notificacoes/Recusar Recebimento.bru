@@ -1,0 +1,22 @@
+meta {
+  name: Recusar Recebimento
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:8099/notificacoes/recusar-recebimento
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: ZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SkpaRlZ6ZFdGeWFXOUJjR2tpT2lJeElpd2laWGh3SWpveE5qa3hOakUzTURVemZRLlNkc09yR0tSOTBvTEtQQVkwa0hld1hKODVqSUdXMmU0TUZ3dWlDdDNmZUU
+}
+
+body:json {
+  {
+      "Destinatario": "5527992373693",
+      "IdCategoria": 1
+  }
+}

@@ -1,17 +1,17 @@
 meta {
-  name: Buscar CEP
+  name: Enviar Whatsapp
   type: http
-  seq: 2
+  seq: 1
 }
 
-get {
-  url: https://api.sicoobes.com.br/pa/cep/29105100
+post {
+  url: localhost:8099/whatsapp/enviar
   body: multipartForm
   auth: bearer
 }
 
 auth:bearer {
-  token: ZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SkpaRlZ6ZFdGeWFXOUJjR2tpT2lJeElpd2laWGh3SWpveE5qZzRNVE13TkRNNGZRLnZIS1RwcnRJRmpteDZMWWQ4V0NnOVd0Qjd5SXdHTFkxMk1GbEFWeXZKbG8
+  token: ZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SkpaRlZ6ZFdGeWFXOUJjR2tpT2lJeElpd2laWGh3SWpveE5qZzNPVGM0TURVeWZRLnhqaDM5QU5Od3hPU25Ma0d6aDBoSWo4Y19uV1ZUYmROU2VwdENlUG41ZTA
 }
 
 body:form-urlencoded {

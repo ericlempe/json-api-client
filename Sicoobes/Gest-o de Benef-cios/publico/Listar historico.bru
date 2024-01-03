@@ -1,0 +1,16 @@
+meta {
+  name: Listar historico
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{BASE_URL}}/consultar/beneficio/242/historico
+  body: none
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}

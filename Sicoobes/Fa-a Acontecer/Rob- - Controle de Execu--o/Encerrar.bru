@@ -1,0 +1,22 @@
+meta {
+  name: Encerrar
+  type: http
+  seq: 3
+}
+
+put {
+  url: localhost:8110/api/v1/proposta/encerrar-robo
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: ZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SkpaRlZ6ZFdGeWFXOUJjR2tpT2lJeElpd2laWGh3SWpveE5qazRNalkzTmpRMWZRLkdsRDdhc1lJMHBORElxRS1oaDBSRmNFbDdzaWRaOE5IekdDSlBFY0YwM2M
+}
+
+body:json {
+  {
+      "IdProposta": [1532, 1531, 1530],
+      "BolComErro": 0
+  }
+}

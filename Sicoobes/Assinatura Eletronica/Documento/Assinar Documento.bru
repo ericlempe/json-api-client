@@ -1,0 +1,32 @@
+meta {
+  name: Assinar Documento
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{BASE_URL}}/documento/assinar
+  body: multipartForm
+  auth: bearer
+}
+
+headers {
+  Content-Type: application/json
+}
+
+auth:bearer {
+  token: ZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SmtZV1J2Y3lJNmV5SkpaRlZ6ZFdGeWFXOGlPaUkxTUNJc0lrNXZiV1ZWYzNWaGNtbHZJam9pUlhKcFl5Qk1aVzF3WlNJc0lrNTFiVU53WmtOdWNHb2lPaUl4TkRRMk1UVTFNVGN3T1NBZ0lDSXNJa2xrUTI5dmNHVnlZWFJwZG1FaU9pSTBJaXdpVG5WdFEyOXZjR1Z5WVhScGRtRWlPaUl6TURBeElpd2lTV1JVYVhCdlVHVnlabWxzSWpvaU1UYzRJaXdpU1dSUVlTSTZXeUkyTXlJc0lqWTBJbDE5TENKbGVIQWlPakUzTURFNU9EVTBPRGw5Lk9EbHFSMlExYjJfQTg3R1A4NlEtV2ZQZ0VDaWFFTDNGdWhlRFJfRllCUFk
+}
+
+body:form-urlencoded {
+  IdTipoEnvioAssinatura: 1
+  IdPlataforma: 2
+  IdSubCategoria: 67
+  IdCooperativa: 9
+  IdPa: 43
+  DescDocumento: Testes%20valida%C3%A7%C3%A3o%202023-03-03
+  Arquivos[]: undefined
+  Signatarios: %5B%7B%22IdSignatario%22%3A%2247788384153200236%22%2C%22NumCpfCnpj%22%3A%22930.196.882-72%22%2C%22DescNomeSignatario%22%3A%22Eric%20Lempe%20Filho%22%2C%22IdTipoAssinatura%22%3A%2222%22%2C%22IdTipoAutenticacao%22%3A%226%22%2C%22Email%22%3A%22%20%20rogeriodornelas%40gmail.com%20%20%20%20%20%22%2C%22Celular%22%3Anull%7D%5D
+  ~BolPrivado: 1
+  ~UsuariosPrivados: %5B%7B%22IdUsuario%22%3A4%7D%2C%7B%22IdUsuario%22%3A50%7D%5D
+}

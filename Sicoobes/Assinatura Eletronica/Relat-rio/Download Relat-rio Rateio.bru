@@ -1,0 +1,25 @@
+meta {
+  name: Download Relat-rio Rateio
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{BASE_URL}}/documento/relatorio/rateio-download?AnoMes=2023-01
+  body: none
+  auth: bearer
+}
+
+query {
+  AnoMes: 2023-01
+  ~IdCooperativa: 1
+  ~IdPa: 1
+  ~IdTipoEnvioAssinatura: 1
+  ~IdPlataforma: 1
+  ~DataInicial: 2023-01-16
+  ~DataFinal: 2023-01-16
+}
+
+auth:bearer {
+  token: ZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SmtZV1J2Y3lJNmV5SkpaRlZ6ZFdGeWFXOGlPaUkxTUNJc0lrNXZiV1ZWYzNWaGNtbHZJam9pUlhKcFl5Qk1aVzF3WlNJc0lrNTFiVU53WmtOdWNHb2lPaUl4TkRRMk1UVTFNVGN3T1NBZ0lDSXNJa2xrUTI5dmNHVnlZWFJwZG1FaU9pSTBJaXdpVG5WdFEyOXZjR1Z5WVhScGRtRWlPaUl6TURBeElpd2lTV1JVYVhCdlVHVnlabWxzSWpvaU1UYzRJaXdpU1dSUVlTSTZXeUkyTXlJc0lqWTBJbDE5TENKbGVIQWlPakUzTURFNU9EVTBPRGw5Lk9EbHFSMlExYjJfQTg3R1A4NlEtV2ZQZ0VDaWFFTDNGdWhlRFJfRllCUFk
+}

@@ -1,0 +1,19 @@
+meta {
+  name: Enviar Email
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8099/notificacoes/email
+  body: multipartForm
+  auth: bearer
+}
+
+auth:bearer {
+  token: ZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SkpaRlZ6ZFdGeWFXOUJjR2tpT2lJeElpd2laWGh3SWpveE5qazJOVEl6T0RrNWZRLnF3cWl3REJha1Naa1UwYkZ6OGF3cHNnUlptYkoyUXoxTS1zMVFTcURoVzQ
+}
+
+body:form-urlencoded {
+  Anexos: undefined
+}

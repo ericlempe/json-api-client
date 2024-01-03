@@ -1,0 +1,23 @@
+meta {
+  name: List Posts
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{base_url}}/users/1
+  body: json
+  auth: none
+}
+
+query {
+  ~userId: 2
+}
+
+body:json {
+  {
+    "userId": 1,
+    "title": "Teste de cadastro",
+    "body": "Corpo de mensagem"
+  }
+}

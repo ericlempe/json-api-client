@@ -1,0 +1,23 @@
+meta {
+  name: Buscar Beneficios para adesao
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{BASE_URL}}/adesao/beneficio?NumCpfCnpj=14461551709&NumContaCorrente=12355&IdCooperativa=9
+  body: none
+  auth: none
+}
+
+query {
+  NumCpfCnpj: 14461551709
+  NumContaCorrente: 12355
+  IdCooperativa: 9
+  ~IdBeneficio: 1520
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}

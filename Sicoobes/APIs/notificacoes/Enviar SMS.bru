@@ -1,0 +1,33 @@
+meta {
+  name: Enviar SMS
+  type: http
+  seq: 3
+}
+
+post {
+  url: https://api.sicoobes.com.br/notificacoes/sms
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: ZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SkpaRlZ6ZFdGeWFXOUJjR2tpT2lJeElpd2laWGh3SWpveE56QXlPVGt4TmpNMGZRLnY1QU5YUmlyWk5ucWZtOE1RVGVITF9TV3BEckRrOTFPWVVLaG9uTXdEVEU
+}
+
+body:json {
+  {
+      "IdSistema": 11,
+      "IdCategoria": 1,
+      "IdUsuarioNotificacao": 7397,
+      "Destinatario": [
+          {
+              "Contato": "5527992373693"
+          }
+      ],
+      "JsonInfoMensagem": {
+          "Mensagem": "Primeiro SMS enviado via API centralizadora",
+          "Remetente": "Sicoob ES"
+  
+      }
+  }
+}

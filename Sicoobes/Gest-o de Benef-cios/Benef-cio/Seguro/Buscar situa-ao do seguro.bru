@@ -1,0 +1,26 @@
+meta {
+  name: Buscar situa-ao do seguro
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://api.zurich.com.br/affinities/retailer/v1/sales?certificate=99108202304190000209&package =400023
+  body: none
+  auth: none
+}
+
+query {
+  certificate: 99108202304190000209
+  package : 400023
+}
+
+headers {
+  person-token: Lb7IGfy09IpQYC69xddcI+HcC33Tqg1k7C1bhYxt9NM=
+  access_token: ae442faa-1eb1-4347-bb85-24778a7e5db1
+  Accept: application/json
+  Content-Type: application/json
+  client_id: b3b07995-0769-4193-9303-d9d23c9757db
+  ~: 
+  ~: 
+}

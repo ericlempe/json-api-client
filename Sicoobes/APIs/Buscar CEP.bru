@@ -1,0 +1,24 @@
+meta {
+  name: Buscar CEP
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://localhost:8099/pa/cep/29105100
+  body: multipartForm
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:form-urlencoded {
+  Numero: 5527992373693
+  Template: 014babaf-65de-4986-9580-907f43184609
+  Body['nome_cliente']: Teste
+  Body['nome_funcionario']: Gabrielle%20Do%20Nascimento%20Miranda
+  Body['nome_oferta']: Cr%C3%A9dito%20Estudantil%20Fa%C3%A7a%20Acontecer
+  ~IdUbots: 
+}

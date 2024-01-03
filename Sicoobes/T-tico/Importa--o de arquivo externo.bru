@@ -1,0 +1,20 @@
+meta {
+  name: Importa--o de arquivo externo
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{BASE_URL}}/importar-arquivo-externo
+  body: multipartForm
+  auth: bearer
+}
+
+auth:bearer {
+  token: ZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SkpaRlZ6ZFdGeWFXOUJjR2tpT2lJeElpd2laWGh3SWpveE5qZzJOelUxTXprNWZRLnc2TUNoQ0NTcmhPUEVXR05yWFNGMlFTcTZ0RjFVVkdOYmxDRFhoUnkweFk
+}
+
+body:form-urlencoded {
+  file: undefined
+  DescImportacao: Teste%20api
+}

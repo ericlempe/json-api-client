@@ -1,0 +1,22 @@
+meta {
+  name: Listar Beneficios
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{BASE_URL}}/consultar/beneficio?NumCpfCnpj=14461551709&DataNascimento=16/08/2014
+  body: none
+  auth: none
+}
+
+query {
+  NumCpfCnpj: 14461551709
+  DataNascimento: 16/08/2014
+  ~IdBeneficio: 1520
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+}

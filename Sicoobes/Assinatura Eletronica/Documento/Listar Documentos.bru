@@ -1,0 +1,40 @@
+meta {
+  name: Listar Documentos
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{BASE_URL}}/documento/213
+  body: multipartForm
+  auth: bearer
+}
+
+query {
+  ~IdCooperativa: 1
+  ~IdPa: 1
+  ~IdCategoria: 1
+  ~IdSubCategoria: 1
+  ~NumCpfCnpj: 12312312312312
+  ~IdTipoStatusAssinaturaEletronica: 0
+  ~BolMeusEnvios: false
+  ~IdDocumento: 202
+}
+
+headers {
+  Content-Type: application/json
+}
+
+auth:bearer {
+  token: ZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SmtZV1J2Y3lJNmV5SkpaRlZ6ZFdGeWFXOGlPaUkxTUNJc0lrNXZiV1ZWYzNWaGNtbHZJam9pUlhKcFl5Qk1aVzF3WlNJc0lrNTFiVU53WmtOdWNHb2lPaUl4TkRRMk1UVTFNVGN3T1NBZ0lDSXNJa2xrUTI5dmNHVnlZWFJwZG1FaU9pSTBJaXdpVG5WdFEyOXZjR1Z5WVhScGRtRWlPaUl6TURBeElpd2lTV1JVYVhCdlVHVnlabWxzSWpvaU1UYzRJaXdpU1dSUVlTSTZXeUkyTXlJc0lqWTBJbDE5TENKbGVIQWlPakUzTURFNU9EVTBPRGw5Lk9EbHFSMlExYjJfQTg3R1A4NlEtV2ZQZ0VDaWFFTDNGdWhlRFJfRllCUFk
+}
+
+body:form-urlencoded {
+  ~IdCooperativa: 1
+  ~IdPa: 1
+  ~IdCategoria: 1
+  ~IdSubCategoria: 1
+  ~NumCpfCnpj: 12312312312312
+  ~IdTipoStatusAssinaturaEletronica: 1
+  ~BolMeusEnvios: true
+}

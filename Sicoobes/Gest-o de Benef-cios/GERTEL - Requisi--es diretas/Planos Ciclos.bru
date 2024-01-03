@@ -1,0 +1,16 @@
+meta {
+  name: Planos Ciclos
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{GERTEL_URL_API_PRODUCAO}}/planos
+  body: none
+  auth: basic
+}
+
+auth:basic {
+  username: ciclos_vendasonline
+  password: 12345
+}

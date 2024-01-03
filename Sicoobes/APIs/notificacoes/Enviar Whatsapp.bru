@@ -1,0 +1,36 @@
+meta {
+  name: Enviar Whatsapp
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:8099/notificacoes/whatsapp
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: ZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SkpaRlZ6ZFdGeWFXOUJjR2tpT2lJeElpd2laWGh3SWpveE5qa3hOakUwTWpreWZRLlQ3VjAxRFR3alQ3b2N4cVpmeDV4Q3lmSEd5aVNfeGlrcXMxVzdlNURxaDQ
+}
+
+body:json {
+  {
+      "IdSistema": 11,
+      "IdCategoria": 1,
+      "IdUsuarioNotificacao": 50,
+      "Destinatario": [
+          {
+              "Contato": "5527992373693"
+          }
+      ],
+      "JsonInfoMensagem": {
+          "IdTemplate": "fb34dd03-6305-4ad6-968c-5ecc70b1f6c9",
+          "Body":  {
+              "1": "Teste Mindtec",
+              "2": "Faculdade x"
+          
+          }
+      }
+  }
+}

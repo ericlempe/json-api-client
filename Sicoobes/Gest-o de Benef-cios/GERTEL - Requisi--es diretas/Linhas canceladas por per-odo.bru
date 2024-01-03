@@ -1,0 +1,21 @@
+meta {
+  name: Linhas canceladas por per-odo
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{GERTEL_URL_API_PRODUCAO}}/linhas/canceladas?data_inicial=2022-12-01&data_final=2022-12-31
+  body: none
+  auth: basic
+}
+
+query {
+  data_inicial: 2022-12-01
+  data_final: 2022-12-31
+}
+
+auth:basic {
+  username: ciclos_vendasonline
+  password: 12345
+}

@@ -1,0 +1,16 @@
+meta {
+  name: Buscar Associado
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{BASE_URL}}/associado/buscar?NumCpfCnpj=14461551709
+  body: none
+  auth: none
+}
+
+query {
+  NumCpfCnpj: 14461551709
+  ~IdCooperativa: 
+}

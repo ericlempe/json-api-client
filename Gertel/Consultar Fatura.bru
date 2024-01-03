@@ -5,13 +5,13 @@ meta {
 }
 
 get {
-  url: https://sistema.gertel.com.br/api/v2/faturas?contrato_id=187349
+  url: https://sistema.gertel.com.br/api/v2/faturas
   body: none
   auth: none
 }
 
 query {
-  contrato_id: 187349
+  ~contrato_id: 187348
   ~periodo_inicio: 2023-08-01
   ~periodo_fim: 2023-09-20
 }

@@ -1,0 +1,20 @@
+meta {
+  name: Linhas por CPF-CNPJ
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{GERTEL_URL_API_PRODUCAO}}/linhas?cpf_cnpj=43615775000184
+  body: none
+  auth: basic
+}
+
+query {
+  cpf_cnpj: 43615775000184
+}
+
+auth:basic {
+  username: ciclos_vendasonline
+  password: 12345
+}

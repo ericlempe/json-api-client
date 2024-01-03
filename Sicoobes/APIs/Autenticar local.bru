@@ -1,0 +1,29 @@
+meta {
+  name: Autenticar local
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:8099/autenticar
+  body: multipartForm
+  auth: bearer
+}
+
+auth:bearer {
+  token: ZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SkpaRlZ6ZFdGeWFXOUJjR2tpT2lJeElpd2laWGh3SWpveE5qa3lNamswT0RRM2ZRLllhZlBYTk0yRTFmaGlQdENRT1VSd1kwVzRXU3FQSERVdEc2eDFHUnFuaUU
+}
+
+body:form-urlencoded {
+  login: mindtec
+  senha: Psw%401706
+}
+
+body:multipart-form {
+  login: mindtec
+  senha: Psw@1706
+}
+
+script:post-response {
+  bru.setEnvVar('token',res.body.access_token);
+}

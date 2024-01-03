@@ -1,0 +1,33 @@
+meta {
+  name: Armazenar Documento
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:8039/api/v1/documento/armazenar
+  body: multipartForm
+  auth: bearer
+}
+
+headers {
+  Content-Type: application/json
+}
+
+auth:bearer {
+  token: ZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SmtZV1J2Y3lJNmV5SkpaRlZ6ZFdGeWFXOGlPaUkzTkRJeUlpd2lUbTl0WlZWemRXRnlhVzhpT2lKVmMzVmhjbWx2SUdGc2RHVnlMV1JoZEdFaUxDSk9kVzFEY0daRGJuQnFJam9pTWpZNE5qZzBOVFF3TmpZZ0lDQWlMQ0pKWkVOdmIzQmxjbUYwYVhaaElqb2lOQ0lzSWs1MWJVTnZiM0JsY21GMGFYWmhJam9pTXpBd01TSXNJa2xrVkdsd2IxQmxjbVpwYkNJNklqRTRNQ0lzSWtsa1VHRWlPbHRkZlN3aVpYaHdJam94TnpBeE1USXlORE0yZlEuSGJlTGlGYTdNQnpOWkJpUzl6SDhXWkVRQWV4aUg2N3lBaC13TWlnMTY0WQ
+}
+
+body:form-urlencoded {
+  IdCategoria: 57
+  IdSubCategoria: 59
+  DescDocumento: Teste%20de%20Arquivamento%20N%C3%A3o%20Privado
+  Arquivos: undefined
+  NumCooperativa: 1001
+  NumPa: 1
+  ~BolPrivado: 1
+  ~IdTipoEnvioAssinatura: 1
+  ~IdPlataforma: 1
+  ~IdCooperativa: 9
+  ~IdPa: 64
+}

@@ -1,0 +1,23 @@
+meta {
+  name: Pesquisar
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{BASE_URL}}/usuario/pesquisar?IdCooperativa=1
+  body: none
+  auth: bearer
+}
+
+query {
+  IdCooperativa: 1
+  ~IdPa: 
+  ~IdCargo: 150
+  ~NumCpfCnpj: 
+  ~DescNome: 
+}
+
+auth:bearer {
+  token: ZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SmtZV1J2Y3lJNmV5SkpaRlZ6ZFdGeWFXOGlPaUkxTUNJc0lrNXZiV1ZWYzNWaGNtbHZJam9pUlhKcFl5Qk1aVzF3WlNJc0lrNTFiVU53WmtOdWNHb2lPaUl4TkRRMk1UVTFNVGN3T1NBZ0lDSXNJa2xrUTI5dmNHVnlZWFJwZG1FaU9pSXhJaXdpVG5WdFEyOXZjR1Z5WVhScGRtRWlPaUl4TURBeElpd2lTV1JVYVhCdlVHVnlabWxzSWpvaU1UYzRJaXdpU1dSUVlTSTZXeUl4SWwxOUxDSmxlSEFpT2pFMk5qUTFORFUwTWpKOS44Znd0RWNHc2c2QTdDenV3eFJoWFVhSFF0dXZHSlBFQzJqUG9TblBMSVJv
+}

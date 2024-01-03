@@ -1,0 +1,25 @@
+meta {
+  name: Reenviar Link assinatura
+  type: http
+  seq: 15
+}
+
+post {
+  url: {{BASE_URL}}/documento/enviar-link-assinatura
+  body: multipartForm
+  auth: bearer
+}
+
+auth:bearer {
+  token: ZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SmtZV1J2Y3lJNmV5SkpaRlZ6ZFdGeWFXOGlPaUkxTUNJc0lrNXZiV1ZWYzNWaGNtbHZJam9pUlhKcFl5Qk1aVzF3WlNJc0lrNTFiVU53WmtOdWNHb2lPaUl4TkRRMk1UVTFNVGN3T1NBZ0lDSXNJa2xrUTI5dmNHVnlZWFJwZG1FaU9pSTBJaXdpVG5WdFEyOXZjR1Z5WVhScGRtRWlPaUl6TURBeElpd2lTV1JVYVhCdlVHVnlabWxzSWpvaU1UYzRJaXdpU1dSUVlTSTZXeUkyTXlJc0lqWTBJbDE5TENKbGVIQWlPakUzTURFNU9EVTBPRGw5Lk9EbHFSMlExYjJfQTg3R1A4NlEtV2ZQZ0VDaWFFTDNGdWhlRFJfRllCUFk
+}
+
+body:form-urlencoded {
+  IdDocumentoAssinaturaEletronica: 238
+  BolAssinado: 0
+  DescNomeSignatario: Pessoa%20Que%20Assina
+  IdSignatario: 306
+  IdTipoEnvioAssinatura: 1
+  Link: http%3A%2F%2Flocalhost%3A3000%2Fdocumento%2Fassinatura%3FidDocumento%3D3058fb36-df31-458b-b2fa-03da5c59bce9%26email%3Dcontato%40mindtec.com.br
+  Contato: contato%40mindtec.com.br
+}

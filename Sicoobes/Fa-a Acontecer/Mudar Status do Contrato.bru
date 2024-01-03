@@ -1,0 +1,19 @@
+meta {
+  name: Mudar Status do Contrato
+  type: http
+  seq: 6
+}
+
+put {
+  url: localhost:8110/api/v1/proposta/alterar-status-contrato/1483?IdTipoStatusContrato=8
+  body: none
+  auth: bearer
+}
+
+query {
+  IdTipoStatusContrato: 8
+}
+
+auth:bearer {
+  token: ZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SkpaRlZ6ZFdGeWFXOUJjR2tpT2lJeElpd2laWGh3SWpveE5qYzRPVGM1TmpjNWZRLlJ0WWk2ZmpiXzZHN3lObFI1OTJpMGlWNzkwcjgwUUpsNF9nMnNxTklXOVk
+}

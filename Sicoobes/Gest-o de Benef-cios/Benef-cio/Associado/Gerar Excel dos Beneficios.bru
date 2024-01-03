@@ -1,0 +1,24 @@
+meta {
+  name: Gerar Excel dos Beneficios
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{BASE_URL}}/beneficio/associado/exportar?DescNome=eric lempe
+  body: none
+  auth: bearer
+}
+
+query {
+  DescNome: eric lempe
+  ~IdCooperativa: 1
+  ~IdPa: 5
+  ~IdBeneficio: 
+  ~NumCpfCnpj: 
+  ~NumContaCorrente: 
+}
+
+auth:bearer {
+  token: ZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SmtZV1J2Y3lJNmV5SkpaRlZ6ZFdGeWFXOGlPaUkxTUNJc0lrNXZiV1ZWYzNWaGNtbHZJam9pUlhKcFl5Qk1aVzF3WlNJc0lrNTFiVU53WmtOdWNHb2lPaUl4TkRRMk1UVTFNVGN3T1NBZ0lDSXNJa2xrUTI5dmNHVnlZWFJwZG1FaU9pSTBJaXdpVG5WdFEyOXZjR1Z5WVhScGRtRWlPaUl6TURBeElpd2lTV1JVYVhCdlVHVnlabWxzSWpvaU1UZzFJaXdpU1dSUVlTSTZXeUkyTXlJc0lqWTRJbDE5TENKbGVIQWlPakUyT1RBME5qTXpORFY5LmZWSm83dVpVd2txYlhGandYb01qT1FIWERRZUZ6NURvQ01xY1ZtdE1lb2s
+}
